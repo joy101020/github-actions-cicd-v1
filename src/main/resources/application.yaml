@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cicdDemo
+
+  mvc:
+    apiversion:
+      use:
+        query-parameter: version
+      supported:
+        - v1
+        - v2
+      default: v1
+
+server:
+  port: 8082
+
